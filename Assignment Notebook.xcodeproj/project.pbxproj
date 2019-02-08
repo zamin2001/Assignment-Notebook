@@ -13,6 +13,7 @@
 		4560C65C220CA5930067B073 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4560C65A220CA5930067B073 /* Main.storyboard */; };
 		4560C65E220CA5950067B073 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4560C65D220CA5950067B073 /* Assets.xcassets */; };
 		4560C661220CA5950067B073 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4560C65F220CA5950067B073 /* LaunchScreen.storyboard */; };
+		45FEBB53220DF43E00360119 /* Assignments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FEBB52220DF43E00360119 /* Assignments.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		4560C65D220CA5950067B073 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4560C660220CA5950067B073 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4560C662220CA5950067B073 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45FEBB52220DF43E00360119 /* Assignments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignments.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				4560C654220CA5930067B073 /* AppDelegate.swift */,
 				4560C656220CA5930067B073 /* MasterViewController.swift */,
+				45FEBB52220DF43E00360119 /* Assignments.swift */,
 				4560C658220CA5930067B073 /* DetailViewController.swift */,
 				4560C65A220CA5930067B073 /* Main.storyboard */,
 				4560C65D220CA5950067B073 /* Assets.xcassets */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45FEBB53220DF43E00360119 /* Assignments.swift in Sources */,
 				4560C659220CA5930067B073 /* DetailViewController.swift in Sources */,
 				4560C657220CA5930067B073 /* MasterViewController.swift in Sources */,
 				4560C655220CA5930067B073 /* AppDelegate.swift in Sources */,
