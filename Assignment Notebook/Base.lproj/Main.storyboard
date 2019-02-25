@@ -52,29 +52,26 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Enter Description Below" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="yZt-MD-4ND">
-                                <rect key="frame" x="57" y="303" width="261" height="236"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Description" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1cY-3X-qb0">
+                                <rect key="frame" x="112" y="310" width="151" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="1bl-DA-nNx" firstAttribute="centerX" secondItem="jf1-qk-sat" secondAttribute="centerX" id="4Ts-6c-Bt6"/>
-                            <constraint firstItem="VUw-jc-0yf" firstAttribute="bottom" secondItem="yZt-MD-4ND" secondAttribute="bottom" constant="128" id="9Bo-zp-AxZ"/>
                             <constraint firstItem="1bl-DA-nNx" firstAttribute="centerX" secondItem="svH-Pt-448" secondAttribute="centerX" id="FYS-Wu-3dH"/>
                             <constraint firstItem="jf1-qk-sat" firstAttribute="centerX" secondItem="svH-Pt-448" secondAttribute="centerX" id="I40-J6-rsM"/>
                             <constraint firstItem="9bG-Wp-Io4" firstAttribute="centerX" secondItem="svH-Pt-448" secondAttribute="centerX" id="Kyh-po-Ciq"/>
                             <constraint firstItem="1bl-DA-nNx" firstAttribute="leading" secondItem="9bG-Wp-Io4" secondAttribute="leading" id="QtX-CP-EvL"/>
                             <constraint firstItem="jf1-qk-sat" firstAttribute="leading" secondItem="1bl-DA-nNx" secondAttribute="leading" id="Sgo-eJ-PeZ"/>
-                            <constraint firstItem="yZt-MD-4ND" firstAttribute="leading" secondItem="VUw-jc-0yf" secondAttribute="leading" constant="57" id="X9i-Us-Gzh"/>
                             <constraint firstItem="1bl-DA-nNx" firstAttribute="top" secondItem="jf1-qk-sat" secondAttribute="bottom" constant="43" id="YmJ-vt-0LZ"/>
-                            <constraint firstItem="yZt-MD-4ND" firstAttribute="centerX" secondItem="svH-Pt-448" secondAttribute="centerX" id="f7R-Gy-fWx"/>
                             <constraint firstItem="9bG-Wp-Io4" firstAttribute="top" secondItem="1bl-DA-nNx" secondAttribute="bottom" constant="35" id="g31-UT-MQM"/>
                             <constraint firstItem="jf1-qk-sat" firstAttribute="leading" secondItem="VUw-jc-0yf" secondAttribute="leading" constant="112" id="lah-Z8-2GT"/>
                             <constraint firstItem="jf1-qk-sat" firstAttribute="top" secondItem="VUw-jc-0yf" secondAttribute="top" constant="41" id="qbj-YQ-pjU"/>
-                            <constraint firstItem="yZt-MD-4ND" firstAttribute="top" secondItem="9bG-Wp-Io4" secondAttribute="bottom" constant="30" id="szn-Q1-KyF"/>
                             <constraint firstItem="9bG-Wp-Io4" firstAttribute="centerX" secondItem="jf1-qk-sat" secondAttribute="centerX" id="vMs-1y-LEC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VUw-jc-0yf"/>
@@ -82,8 +79,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Assignment Details" id="mOI-FS-AaM"/>
                     <connections>
-                        <outlet property="DescriptionTextField" destination="yZt-MD-4ND" id="LRl-5j-QHz"/>
-                        <outlet property="descriptionTextField" destination="yZt-MD-4ND" id="oEE-ao-O02"/>
+                        <outlet property="descriptionTextField" destination="1cY-3X-qb0" id="940-zU-7Hh"/>
                         <outlet property="dueDateTextField" destination="9bG-Wp-Io4" id="uDE-78-ZaC"/>
                         <outlet property="subjectTextField" destination="1bl-DA-nNx" id="hzz-Kh-rLm"/>
                         <outlet property="titleTextField" destination="jf1-qk-sat" id="vo1-oI-Dyy"/>

@@ -12,12 +12,12 @@ class Assignments: Codable {
     
     var title: String
     var subject:String
-    var DueDate:Int
+    var DueDate:String
     var Description:String
     
     
     
-    init(title:String,subject:String,DueDate:Int,Description:String) {
+    init(title:String,subject:String,DueDate:String,Description:String) {
         self.title = title
         self.subject = subject
         self.DueDate = DueDate

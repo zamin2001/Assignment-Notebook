@@ -15,42 +15,9 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var subjectTextField: UITextField!
     
     @IBOutlet weak var dueDateTextField: UITextField!
+    @IBOutlet weak var descriptionTextField: UITextField!
     
-    @IBOutlet weak var DescriptionTextField: UITextView!
-    
-    var detailItem: Assignments? {
-        didSet {
-            // Update the view.
-            configureView()
-        }
-    }
-    
-    func configureView(){
-        if let  assignment = self.detailItem {
-            if titleTextField != nil {
-                titleTextField.text = assignment.title
-                subjectTextField.text = assignment.subject
-                dueDateTextField.text = String(assignment.DueDate)
-                DescriptionTextField.text = assignment.Description
-                }
-          
-            }
-     func  viewWillDisappear(){
-            if let assignment = self.detailItem{
-                assignment.title = titleTextField.text!
-                assignment.subject = subjectTextField.text!
-                assignment.DueDate = Int(dueDateTextField.text!)!
-                assignment.Description = DescriptionTextField.text
-                
-                
-            }
-        }
-    }
-    
-    
-    
-    
-    
+   
     
     
     
@@ -61,7 +28,48 @@ class DetailViewController: UIViewController {
         configureView()
     }
     
+    var detailItem: Assignments? {
+        didSet {
+            // Update the view.
+            configureView()
+        }
+    }
+    
+    
+     func  viewWillDisappear(){
+            if let assignment = self.detailItem{
+                assignment.title = titleTextField.text!
+                assignment.subject = subjectTextField.text!
+                assignment.DueDate = dueDateTextField.text!
+                assignment.Description = descriptionTextField.text!
+                
+                
+            }
+        }
+    func configureView(){
+        ///Update the user interface interface for the detail item
+        if let  assignment = self.detailItem {
+            if titleTextField != nil {
+                titleTextField.text = assignment.title
+                subjectTextField.text = assignment.subject
+                dueDateTextField.text = assignment.DueDate
+                descriptionTextField.text = assignment.Description
+            }
+            
+        }
+    }
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
   
     
-}
+
 
